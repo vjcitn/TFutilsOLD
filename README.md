@@ -1,2 +1,1 @@
-# TFutils
-VJC repo for TFutils package
+vignettes/TFutils.Rmd
