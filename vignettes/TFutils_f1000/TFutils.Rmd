@@ -266,7 +266,7 @@ gg = lapply(rr, function(x) {
 for (i in 1:length(gg))  gg[[i]]$tf = colData(fimo16)[i,2]
 ```
 It turns out there are too many distinct TFs
-to display individually, so we label the
+to label individually, so we label the
 scores with the names of the
 associated TF families as defined in CISBP.
 ```{r domat}
@@ -345,8 +345,21 @@ and methods of the `r Biocpkg("TFutils")` package.
 
 ### The `TFCatalog` class
 
+<!--
+ [1] "cisbpTFcat"             "encode690"              "fimo16"                
+ [4] "fimoMap"                "genemodelDF"            "genemodForGviz"        
+ [7] "grabTab"                "gwascat_hg19_chr17"     "HGNCmap"               
+[10] "hocomoco.mono"          "importFIMO"             "importFIMO_local_split"
+[13] "metadata_tf"            "named_tf"               "show"                  
+[16] "TFCatalog"              "tfhash"                 "TFtargs"               
+[19] "tftColl"                "tftCollMap"             "URL_s3_tf"             
+-->
+
+The package ships with snapshots of several TF catalogs
+
+
 A number of relatively small reference
-```
+```{r lkcoll}
 data(tftColl)
 data(tftCollMap)
 data(cisbpTFcat)
